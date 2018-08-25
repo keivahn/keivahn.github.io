@@ -1,50 +1,78 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- general meta information about the website -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Alex Keivahn Smith's website.">
+    <meta name="author" content="Alex Keivahn Smith">
+    <link rel="icon" href="static/img/favicon.png">
+    <title>Alex Keivahn Smith</title>
 
-<head>
-  <title>Alex Keivahn Smith</title>
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:300,900" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="static/appendtemplate.js"></script>
-  <link rel="icon" href="static/img/favicon.png">
-</head>
+    <!-- CSS files needed for this webpage -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet">
 
-<div class="content">
+    <!-- JS files needed for this webpage -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/appendtemplate.js"></script>
+    <script src="static/js/scrolltransition.js"></script>
 
-<body>
+    <!-- fonts needed for this webpage -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:300,900" rel="stylesheet">
+  </head>
 
-  <div id="nav-placeholder"></div>
+  <!-- begins the content of the website
+  ================================= -->
+  <body>
 
-  <div class="main">
+    <div id="wrapper">
+    <!-- for nav bar -->
+    <header></header>
 
-    <img src="static/img/logo_v2.png" id="logo">
+    <!-- down arrow -->
+    <div class="arrow bounce">
+      <div class="fa fa-arrow-down fa-2x">
+        <img src="static/img/downarrow.png">
+      </div>
+    </div>
 
-  </div>
+    <!-- large banner image -->
+    <section class="first">
+      <div class="container" id="logo-container">
+        <div id="startchange"></div>
+        <img id="logo" src="static/img/logo.png">
+      </div>
+    </section>
 
-  <div class="main_intro">
+    <div id="hidearrow"></div>
 
-  Alex graduated from Princeton in 2013 with a bachelor's in Near Eastern Studies.
-  He took a job in a completely related field, operations, at an industrial supply
-  company called McMaster-Carr. At this company, Alex fell in love with finding creative
-  solutions to everyday problems. <em>How do you get thousands of packages through
-  a half-built warehouse without a working conveyor or any packing stations? How do
-  you lead a department to complete 100% of its work every day when it's only been
-  getting through 70% of its work on a good day?</em> While putting his brain to
-  work with these engaging questions, Alex decided to pursue a Master of Information
-  and Data Science from UC Berkeley. It might be helpful to think of data science as
-  the intersection of statistics and programming. Now, Alex is off to pursue even
-  harder questions at Yale Divinity School. He's especially concerned with questions
-  about the repentance of God and the problem of injustice. If you've solved either
-  of these problems, please drop him a line!
+    <main role="main">
 
-  </div>
+      <p>
+        Alex graduated from Princeton in 2013 with a bachelor's in Near Eastern Studies.
+        He took a job in a completely related field, operations, at an industrial supply
+        company called McMaster-Carr. At this company, Alex fell in love with finding creative
+        solutions to everyday problems. <em>How do you get thousands of packages through
+        a half-built warehouse without a working conveyor or any packing stations? How do
+        you lead a department to complete 100% of its work every day when it's only been
+        getting through 70% of its work on a good day?</em> While putting his brain to
+        work with these engaging questions, Alex decided to pursue a Master of Data Science
+        from UC Berkeley. It might be helpful to think of data science as
+        the intersection of statistics and programming. Now, Alex is off to pursue even
+        harder questions at Yale Divinity School. He's especially concerned with questions
+        about the repentance of God and the problem of injustice. If you've solved either
+        of these problems, please drop him a line!
+      </p>
 
-</div>
+    </main>
 
-</body>
+    <footer></footer>
 
-<div id="footer-placeholder"></div>
+    </div>
+
+  </body>
 
 </html>

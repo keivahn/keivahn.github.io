@@ -1,89 +1,127 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- general meta information about the website -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Alex Keivahn Smith's website.">
+    <meta name="author" content="Alex Keivahn Smith">
+    <link rel="icon" href="static/img/favicon.png">
+    <title>Alex Keivahn Smith</title>
 
-<head>
-  <title>AKS - Contact</title>
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:300,900,400i" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="static/appendtemplate.js"></script>
-  <link rel="icon" href="static/img/favicon.png">
-</head>
+    <!-- CSS files needed for this webpage -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet">
+    <link href="static/css/custom-secondary.css" rel="stylesheet">
 
-<div class="content">
+    <!-- JS files needed for this webpage -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/appendtemplate.js"></script>
 
-<body>
+    <!-- fonts needed for this webpage -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:300,900" rel="stylesheet">
+  </head>
 
-<div id="nav-placeholder"></div>
+  <!-- begins the content of the website
+  ================================= -->
+  <body>
 
-<div class="main_sub">
+    <div id="wrapper">
+    <!-- for nav bar -->
+    <header></header>
 
-</div>
+    <!-- large banner image -->
+    <section class="secondary">
+      <div class="container" id="logo-container">
+        <div id="startchange"></div>
+      </div>
+    </section>
 
-<div id="contactForm">
+    <main role="main">
 
-  <script type="text/javascript">
-  var submitted=false;
-  </script><iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){window.location='contactsubmitted.html';}" style="display: none;"></iframe>
+      <p>
+        Fill out this brief contact form to get in touch with Alex. He will respond
+        within 48 hours.
+      </p>
 
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl_LCk3awWFfKRxqAyZPZfJxp0zcPhHRjbsqi7uE06IWUtOg/formResponse" method="POST" id="ss-form" onsubmit="submitted=true;" target="hidden_iframe">
+      <div id="contactForm">
 
-  <ol role="list" class="ss-question-list" style="padding-left: 0;">
+        <script type="text/javascript">
+        var submitted=false;
+        </script><iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){window.location='contactsubmitted.html';}" style="display: none;"></iframe>
 
-  <label class="ss-q-item-label" for="entry_1043971480"><div class="ss-q-title">name
-  <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfl_LCk3awWFfKRxqAyZPZfJxp0zcPhHRjbsqi7uE06IWUtOg/formResponse" method="POST" id="ss-form" onsubmit="submitted=true;" target="hidden_iframe">
 
-  <input type="text" name="entry.1043971480" value="" class="ss-q-short" id="entry_1043971480" dir="auto" aria-label="name  " aria-required="true" required="" title="">
-  <div class="error-message" id="415886102_errorMessage"></div>
+        <ol role="list" class="ss-question-list" style="padding-left: 0;">
+
+        <label class="ss-q-item-label" for="entry_1043971480"><div class="ss-q-title">name
+        <span class="ss-required-asterisk" aria-hidden="true">*</span></div></label>
+
+        <br>
+
+        <input type="text" name="entry.1043971480" value="" class="ss-q-short" id="entry_1043971480" dir="auto" aria-label="name  " aria-required="true" required="" title="">
+        <div class="error-message" id="415886102_errorMessage"></div>
+
+        <label class="ss-q-item-label" for="entry_747225251"><div class="ss-q-title">email address
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+        <br>
+
+        <input type="email" name="entry.747225251" value="" class="ss-q-short" id="entry_747225251" dir="auto" aria-label="email address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">
+
+        <br>
+
+        <label class="ss-q-item-label" for="entry_2130538723"><div class="ss-q-title">phone number
+        </div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+        <br>
+
+        <input type="text" name="entry.2130538723" value="" class="ss-q-short" id="entry_2130538723" dir="auto" aria-label="phone number  " title="">
+
+        <br>
+
+        <label class="ss-q-item-label" for="entry_990343807"><div class="ss-q-title">message
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+        <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+        <br>
+
+        <textarea name="entry.990343807" rows="8" cols="50" class="ss-q-long" id="entry_990343807" dir="auto" aria-label="message  " aria-required="true" required=""></textarea>
+        <div class="error-message" id="675235806_errorMessage"></div>
+
+        <br>
+
+        <input type="hidden" name="draftResponse" value="[null,null,&quot;2414622025860406188&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
 
 
-  <label class="ss-q-item-label" for="entry_747225251"><div class="ss-q-title">email address
-  <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-  <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-  <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
 
-  <input type="email" name="entry.747225251" value="" class="ss-q-short" id="entry_747225251" dir="auto" aria-label="email address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">
+        <input type="hidden" name="fbzx" value="2414622025860406188">
+        <div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
+        <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+        </td>
+        </tr></tbody></table></div></ol>
 
-  <label class="ss-q-item-label" for="entry_2130538723"><div class="ss-q-title">phone number
-  </div>
-  <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+        <div><span class="ss-required-asterisk">Fields marked with an * are required.</span></div>
 
-  <input type="text" name="entry.2130538723" value="" class="ss-q-short" id="entry_2130538723" dir="auto" aria-label="phone number  " title="">
+        </form>
 
+      </div>
 
-  <label class="ss-q-item-label" for="entry_990343807"><div class="ss-q-title">message
-  <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-  <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-  <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+    </main>
 
-  <textarea name="entry.990343807" rows="8" cols="50" class="ss-q-long" id="entry_990343807" dir="auto" aria-label="message  " aria-required="true" required=""></textarea>
-  <div class="error-message" id="675235806_errorMessage"></div>
+    <footer></footer>
 
+    </div>
 
-  <input type="hidden" name="draftResponse" value="[null,null,&quot;2414622025860406188&quot;]
-  ">
-  <input type="hidden" name="pageHistory" value="0">
-
-
-
-  <input type="hidden" name="fbzx" value="2414622025860406188">
-  <div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
-  <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-  <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-  </td>
-  </tr></tbody></table></div></ol>
-
-  <div><span class="ss-required-asterisk">Fields marked with an * are required.</span></div>
-
-  </form>
-
-</div>
-
-</body>
-
-</div>
-
-<div id="footer-placeholder"></div>
+  </body>
 
 </html>

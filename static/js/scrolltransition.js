@@ -1,0 +1,79 @@
+// changes the color of the navbar upon scrolling to the div with the id "startchange"
+
+// upon scrolling, change the class of the navbar from transparent to colored
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+   if (startchange.length){
+     $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $(".nav-transparent").css('background-color', 'rgba(0, 0, 0, 0.7)');
+            // $(".navbar-collapse").css('background-color', 'rgba(31, 31, 31, 0.0)');
+         } else {
+            $('.nav-transparent').css('background-color', 'transparent');
+            // if ($(window).width() <= 768){
+            //   $(".navbar-collapse").css('background-color', 'rgba(31, 31, 31, 0.75)');
+            // }
+         }
+     });
+    }
+});
+
+// disabled
+// upon scrolling fade in the appropriate divs
+// $(document).ready(function() {
+//
+//     /* Every time the window is scrolled ... */
+//     $(window).scroll( function(){
+//
+//         /* Check the location of each desired element */
+//         $('.fadein').each( function(i){
+//
+//             var bottom_of_object = $(this).position().top; // optional: add "+ $(this).outerHeight()" if you want to fade in only when the whole div is visible
+//             var bottom_of_window = $(window).scrollTop() + $(window).height();
+//
+//             /* If the object is completely visible in the window, fade it it */
+//             if( bottom_of_window > bottom_of_object ){
+//
+//                 $(this).animate({'opacity':'1'},1500);
+//
+//             }
+//         });
+//     });
+// });
+
+// hide the downarrow upon scrolling
+$(document).ready(function(){
+
+   var scroll_start = 0;
+   var startchange1 = $('#hidearrow').offset().top;
+   var startchange2 = $(document).height()*1.0;
+
+   console.log("startchange1",startchange1);
+   console.log("startchange2",startchange2);
+
+   var maxstartchange = startchange1;
+   if (startchange2 < maxstartchange) {
+     maxstartchange = startchange2;
+   }
+
+   console.log("maxstartchange",maxstartchange);
+
+   var offset = maxstartchange;
+
+   if (offset){
+     $(document).scroll(function() {
+
+        scroll_start = $(this).scrollTop()+$(window).height();
+        console.log("scroll_start",scroll_start);
+
+        if(scroll_start > offset) {
+            $(".fa").css('opacity', '0.0');
+         } else {
+            $('.fa').css('opacity', '1.0');
+         }
+     });
+    }
+});
