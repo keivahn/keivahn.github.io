@@ -1,0 +1,26 @@
+/* makes images responsive */
+img {
+  max-width: 100%;
+}
+
+#slideshow {
+  padding: 0;
+  margin: 0;
+}
+
+/* takes care of clearing the floats */
+#slideshow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* hides the images not being shown */
+#slideshow img {
+  float: left;
+  margin: 0 -100% 0 0;
+
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}

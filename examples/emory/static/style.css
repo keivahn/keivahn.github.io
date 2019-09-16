@@ -1,0 +1,259 @@
+html {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+#donateBar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  text-transform: lowercase;
+  font-size: 18pt;
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+.donateItem {
+  background-color: #257985;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 20px;
+
+  color: #FFFFFF;
+
+  border-radius: 25px;
+}
+
+.donateItem:hover {
+  opacity: 0.5;
+}
+
+.donateImage:hover {
+  opacity: 0.5;
+}
+
+.donateItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.donateImage img {
+  height: 16pt;
+}
+
+#NavBar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 14pt;
+
+  padding-bottom: 15px;
+
+  border-bottom: solid 5px #FF4447;
+}
+
+.NavLeft {
+  align-self: center;
+  margin-right: auto;
+}
+
+.NavRight {
+  align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.NavRight:hover {
+  color: #FF4447;
+}
+
+#NavBar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.redEmphasis {
+  background-color: #FF4447;
+
+  font-family: "Permanent Marker", sans-serif;
+  color: #FFFFFF;
+  font-size: 20pt;
+  text-align: center;
+
+  padding: 15px;
+}
+
+.title {
+  font-size: 20pt;
+  font-family: 'Permanent Marker', sans-serif;
+  color: #257985;
+
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+}
+
+.title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title a:hover {
+  color: #FF4447;
+}
+
+.subTitle {
+  font-size: 16pt;
+  font-family: 'Permanent Marker', sans-serif;
+
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+}
+
+.body {
+  text-align: justify;
+
+  padding-top: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+.body a {
+  color: #FF4447;
+  text-decoration: none;
+}
+
+.body a:hover {
+  opacity: 0.6;
+}
+
+.subBody a {
+  color: #FF4447;
+  text-decoration: none;
+}
+
+.subBody a:hover {
+  opacity: 0.6;
+}
+
+.footer a {
+  color: #FF4447;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  opacity: 0.6;
+}
+
+.listItem {
+  padding-top: 5px;
+}
+
+.subBody {
+  padding-top: 2px;
+  padding-right: 15px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+input {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+select {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+input[type=submit] {
+  color: #FFFFFF;
+  font-size: 15pt;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+
+  width: 200px;
+  border: 0;
+  border-radius: 10px;
+
+  cursor: pointer;
+  cursor: hand;
+
+  background-color: #FF4447;
+}
+
+.divider {
+  border-bottom: solid 2px #257985;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.show_hide {
+  color: #FF4447;
+  padding-top: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  /*margin-top: 20px;*/
+  margin-bottom: 20px;
+}
+
+.show_hide:hover {
+  background-color: #257985;
+  color: #FFFFFF;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.footer {
+  text-align: center;
+  font-size: 9pt;
+
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+  clear: both;
+
+  opacity: 0.8;
+}
+
+.footer a{
+  font-size: 9pt;
+}
+
+.footer {
+  font-size: 9pt;
+}
+
+html, body {
+  height: 90%;
+}
+
+.content {
+  min-height: 100%;
+}
+
+.footer {
+  position: relative;
+  clear: both;
+}
